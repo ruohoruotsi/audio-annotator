@@ -2,10 +2,10 @@
     "task": {
         "feedback": "none",
         "visualization": "spectrogram",
-        "proximityTag": ["near", "far", "not sure"],
-        "annotationTag": ["horn honking", "dog barking", "knocking", "whistle", "engine idling", "jackhammer drilling", "music playing", "people talking", "single footstep", "siren wailing", "gun shooting", "industrial HVAC", "people shouting", "engine passing"],
+        "proximityTag": [],
+        "annotationTag": ["nobeat", "beat", "novox", "vox", "other"],
         "url": "/static/wav/spectrogram_demo_doorknock_mono.wav",
-        "tutorialVideoURL":"https://www.youtube.com/embed/Bg8-83heFRM",
+        "tutorialVideoURL": "",
         "alwaysShowTags": true,
         "instructions": [
             "Highlight &amp; Label Each Sound",

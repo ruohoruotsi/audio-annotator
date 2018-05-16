@@ -249,11 +249,12 @@ Annotator.prototype = {
         var my = this;
         $.ajax({
             type: 'POST',
-            url: $.getJSON(postUrl),
+            url: postUrl,
             contentType: 'application/json',
             data: JSON.stringify(content)
         })
         .done(function(data) {
+            alert('The sweet smell of success');
             // If the last task had a hiddenImage component, remove it
             if (my.currentTask.feedback === 'hiddenImage') {
                 my.hiddenImage.remove();
