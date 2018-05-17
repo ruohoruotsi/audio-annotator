@@ -19,5 +19,9 @@ def save_annotations():
     print("in save_annotations!!!!")
     return json.dumps({'success':True}), 200, {'ContentType': 'application/json'}
 
+@app.route('/curio')
+def curio():
+    return render_template('audio.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

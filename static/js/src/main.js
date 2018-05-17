@@ -142,37 +142,37 @@ Annotator.prototype = {
             );
 
             // set video url
-            $('#tutorial-video').attr('src', tutorialVideoURL);
+            // $('#tutorial-video').attr('src', tutorialVideoURL);
 
             // add instructions
-            var instructionsContainer = $('#instructions-container');
-            instructionsContainer.empty();
-            if (typeof instructions !== "undefined"){
-                $('.modal-trigger').leanModal();
-                instructions.forEach(function (instruction, index) {
-                    if (index==0) {
-                        // first instruction is the header
-                        var instr = $('<h4>', {
-                            html: instruction
-                        });
-                    } else {
-                        var instr = $('<h6>', {
-                            "class": "instruction",
-                            html: instruction
-                        });                    
-                    }
-                    instructionsContainer.append(instr);
-                });
-                if (!my.instructionsViewed) {
-                    $('#instructions-modal').openModal();
-                    my.instructionsViewed = true;
-                }
-            }
-            else
-            {
+//            var instructionsContainer = $('#instructions-container');
+//            instructionsContainer.empty();
+//            if (typeof instructions !== "undefined"){
+//                $('.modal-trigger').leanModal();
+//                instructions.forEach(function (instruction, index) {
+//                    if (index==0) {
+//                        // first instruction is the header
+//                        var instr = $('<h4>', {
+//                            html: instruction
+//                        });
+//                    } else {
+//                        var instr = $('<h6>', {
+//                            "class": "instruction",
+//                            html: instruction
+//                        });                    
+//                    }
+//                    instructionsContainer.append(instr);
+//                });
+//                if (!my.instructionsViewed) {
+//                    $('#instructions-modal').openModal();
+//                    my.instructionsViewed = true;
+//                }
+//            }
+//            else
+//            {
                 $('#instructions-container').hide();
                 $('#trigger').hide();
-            }
+//            }
 
             // Update the visualization type and the feedback type and load in the new audio clip
             my.wavesurfer.params.visualization = my.currentTask.visualization; // invisible, spectrogram, waveform
